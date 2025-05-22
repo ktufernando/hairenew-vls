@@ -51,7 +51,7 @@ export default function Home() {
         <VideoSection videoUrl="https://youtu.be/wNYtpuEbhOs" featured={true} />
         
         <div className="fixed bottom-4 right-4 z-50">
-          <CountdownTimer hours={47} minutes={59} seconds={59} />
+          <CountdownTimer/>
         </div>
         
         {/* Nueva organización de secciones */}

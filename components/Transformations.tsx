@@ -205,12 +205,10 @@ const Transformations = () => {
                   playing={true}
                   controls={true}
                   config={{
-                    youtube: {
-                      playerVars: {
-                        showinfo: 0,
-                        rel: 0,
-                        modestbranding: 1
-                      }
+                    playerVars: {
+                      showinfo: 0,
+                      rel: 0,
+                      modestbranding: 1
                     }
                   }}
                 />
