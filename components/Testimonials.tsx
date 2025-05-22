@@ -225,6 +225,7 @@ const Testimonials = () => {
             text="¡Quiero los mismos resultados!" 
             message="Hola, he visto los testimonios en su web y me gustaría saber cómo puedo conseguir resultados similares"
             size="lg"
+            location="testimonials_section"
           />
         </motion.div>
       </div>

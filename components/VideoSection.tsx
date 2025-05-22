@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FiPlay } from 'react-icons/fi';
 import PlaceholderImage from './PlaceholderImage';
 import WhatsAppButton from './WhatsAppButton';
+import { trackEvent } from './GoogleAnalytics';
 
 interface VideoSectionProps {
   videoUrl: string;
@@ -16,6 +17,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videoUrl, featured = false 
   const playerRef = useRef<ReactPlayer>(null);
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const lastTrackedMilestoneRef = useRef<number | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,8 +39,34 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videoUrl, featured = false 
   }, []);
 
   const handlePlay = () => {
+    // Rastrear el evento de reproducción de VSL
+    trackEvent(
+      'play_video',
+      'Video',
+      'Main VSL Video Play',
+      1
+    );
     setIsPlaying(true);
     setHasStarted(true);
+  };
+
+  const handleVideoProgress = (state: { played: number; playedSeconds: number; loaded: number; loadedSeconds: number }) => {
+    // Rastrear progreso de visualización en puntos clave (25%, 50%, 75%, 100%)
+    const milestones = [0.25, 0.5, 0.75, 1];
+    const currentMilestone = milestones.find(milestone => 
+      state.played >= milestone && 
+      (!lastTrackedMilestoneRef.current || lastTrackedMilestoneRef.current < milestone)
+    );
+    
+    if (currentMilestone && currentMilestone !== lastTrackedMilestoneRef.current) {
+      trackEvent(
+        'video_milestone',
+        'Video',
+        `VSL Video ${Math.round(currentMilestone * 100)}% watched`,
+        Math.round(currentMilestone * 100)
+      );
+      lastTrackedMilestoneRef.current = currentMilestone;
+    }
   };
 
   // Estilos especiales para cuando el video es destacado (featured)
@@ -160,9 +188,9 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videoUrl, featured = false 
                 height="100%"
                 playing={isPlaying}
                 controls={hasStarted}
-                light={false}
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
+                onProgress={handleVideoProgress}
                 config={{
                   youtube: {
                     playerVars: { 
@@ -193,6 +221,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videoUrl, featured = false 
               message="Hola, acabo de ver el video sobre soluciones para la caída del cabello y me gustaría más información"
               size="lg"
               className="mx-auto"
+              location="vsl_video_section"
             />
           </motion.div>
         )}

@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FiChevronLeft, FiChevronRight, FiPlay, FiX } from 'react-icons/fi';
 import WhatsAppButton from './WhatsAppButton';
 import ReactPlayer from 'react-player/youtube';
+import { trackEvent } from './GoogleAnalytics';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -43,7 +44,15 @@ const Transformations = () => {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openVideoModal = (videoId: string) => {
+  const openVideoModal = (videoId: string, title: string) => {
+    // Rastrear evento de apertura de video de transformación
+    trackEvent(
+      'play_transformation_video',
+      'Video',
+      `Transformation Video - ${title} (${videoId})`,
+      1
+    );
+    
     setActiveVideo(videoId);
     setIsModalOpen(true);
     // Detener la reproducción automática del swiper cuando se abre un video
@@ -146,7 +155,7 @@ const Transformations = () => {
                     </div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <button 
-                        onClick={() => openVideoModal(video.videoId)}
+                        onClick={() => openVideoModal(video.videoId, video.title)}
                         className="bg-primary-600 bg-opacity-90 hover:bg-primary-700 text-white rounded-full p-4 transition-all transform hover:scale-110"
                       >
                         <FiPlay size={24} />
@@ -224,6 +233,7 @@ const Transformations = () => {
             message="Hola, me gustaría información sobre cómo puedo lograr una transformación como las que vi en los videos"
             size="lg"
             className="mx-auto"
+            location="transformations_section"
           />
         </motion.div>
       </div>

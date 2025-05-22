@@ -59,8 +59,9 @@ const Hero = () => {
           >
             <WhatsAppButton 
               text="¡HABLAR CON UN ASESOR AHORA!" 
-              message="Hola, me interesa saber más sobre la solución para la caída del cabello"
+              message="Hola, me interesa saber más sobre las soluciones para la caída del cabello"
               size="lg"
+              location="hero_section"
             />
           </motion.div>
           

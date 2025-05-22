@@ -111,12 +111,13 @@ const Benefits = () => {
 					viewport={{ once: true }}
 					transition={{ duration: 0.5, delay: 0.6 }}
 				>
-					<WhatsAppButton
-						text="¡Quiero asesoría gratis ahora!"
-						message="Hola, quiero una asesoría de sú protesís capilar"
-						size="lg"
-						className="mx-auto" // Añadido para centrar el botón
-					/>
+					<WhatsAppButton 
+            text="Descubre Nuestras Soluciones" 
+            message="Hola, me gustaría conocer más sobre los beneficios de sus soluciones capilares"
+            size="lg"
+            className="mx-auto"
+            location="benefits_section"
+          />
 				</motion.div>
 			</div>
 		</section>

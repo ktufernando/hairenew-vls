@@ -156,6 +156,7 @@ const ProblemSolution = () => {
             message="Hola, me interesa conocer más sobre la solución definitiva para mi problema de calvicie"
             size="lg"
             className="mx-auto"
+            location="problem_solution_section"
           />
         </motion.div>
       </div>

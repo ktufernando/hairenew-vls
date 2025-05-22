@@ -19,6 +19,7 @@ const Footer = () => {
               message="Hola, me gustaría más información sobre su servicio"
               size="sm"
               className="mb-4"
+              location="footer"
             />
           </div>
           

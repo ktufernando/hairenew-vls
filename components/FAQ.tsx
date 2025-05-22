@@ -146,12 +146,13 @@ const FAQ = () => {
 					viewport={{ once: true }}
 					transition={{ duration: 0.5, delay: 0.6 }}
 				>
-					<WhatsAppButton
-						text="¿Tienes más preguntas? ¡Contáctanos!"
-						message="Hola, tengo algunas preguntas sobre su solución capilar"
-						size="lg"
-						className="mx-auto"
-					/>
+					<WhatsAppButton 
+            text="¿Tienes más preguntas? ¡Contáctanos!" 
+            message="Hola, tengo algunas preguntas sobre sus soluciones capilares"
+            size="lg"
+            className="mx-auto"
+            location="faq_section"
+          />
 				</motion.div>
 			</div>
 		</section>

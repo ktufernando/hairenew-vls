@@ -141,6 +141,7 @@ const SpecialOffer = () => {
                 message="Hola, me interesa el Pack Transformación Total con la oferta especial de esta semana"
                 size="lg"
                 className="w-full md:w-auto md:px-12"
+                location="special_offer_section"
               />
               <p className="mt-4 text-sm text-gray-300">
                 *Oferta válida solo hasta este domingo - ¡Quedan pocos lugares!

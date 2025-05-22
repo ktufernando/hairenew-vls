@@ -161,6 +161,7 @@ const Header = () => {
             message="Hola, me gustaría saber más sobre sus soluciones capilares"
             size="sm"
             className="hidden md:flex"
+            location="header_section"
           />
         </nav>
 
@@ -220,6 +221,7 @@ const Header = () => {
               message="Hola, me gustaría saber más sobre sus soluciones capilares"
               size="sm"
               className="w-full"
+              location="header_section"
             />
           </nav>
         </div>

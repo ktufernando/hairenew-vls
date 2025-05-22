@@ -1,4 +1,5 @@
 import { FaWhatsapp } from 'react-icons/fa';
+import { trackEvent } from './GoogleAnalytics';
 
 interface WhatsAppButtonProps {
   text: string;
@@ -6,6 +7,7 @@ interface WhatsAppButtonProps {
   className?: string;
   size?: 'sm' | 'md' | 'lg';
   variant?: 'primary' | 'outline';
+  location?: string; // Para identificar dónde está el botón
 }
 
 const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ 
@@ -13,11 +15,19 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   message = "Quiero reservar mi lugar", 
   className = "", 
   size = "md",
-  variant = "primary"
+  variant = "primary",
+  location = "general"
 }) => {
   const phoneNumber = "541168275264"; // Tu número de teléfono
   
   const handleClick = () => {
+    // Rastrear el evento en Google Analytics
+    trackEvent(
+      'whatsapp_click', 
+      'CTA', 
+      `WhatsApp CTA - ${location} - ${text}`
+    );
+    
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

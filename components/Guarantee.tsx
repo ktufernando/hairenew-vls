@@ -121,7 +121,8 @@ const Guarantee = () => {
               text="¡Quiero mi garantía de satisfacción!" 
               message="Hola, me interesa saber más sobre la garantía que ofrecen con sus soluciones capilares"
               size="lg"
-              className="mx-auto" // Añadido para centrar el botón
+              className="mx-auto"
+              location="guarantee_section"
             />
           </motion.div>
         </div>
