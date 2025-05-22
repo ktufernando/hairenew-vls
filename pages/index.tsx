@@ -41,7 +41,6 @@ export default function Home() {
         <title>Solución para verte 10 años mas joven sin cirugías</title>
         <meta name="description" content="Descubre las 3 mejores soluciones para la caída del cabello. Prótesis capilares con asesoramiento personalizado, colocación profesional y mantenimiento incluido." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />

@@ -46,7 +46,7 @@ const ProblemSolution = () => {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/hair1.jpeg"
+              src="/images/hair1.jpeg"
               alt="Transformación capilar"
               width={600}
               height={400}
@@ -70,7 +70,7 @@ const ProblemSolution = () => {
           >
             <div className="relative rounded-xl overflow-hidden shadow-2xl h-full">
               <Image
-                src="/hair1.jpeg"
+                src="/images/hair1.jpeg"
                 alt="Transformación capilar"
                 width={600}
                 height={900}

@@ -13,8 +13,8 @@ import 'swiper/css/pagination';
 // Primer testimonio fijo con imágenes antes/después
 const featuredTestimonial = {
   name: "Carlos Martínez",
-  beforeImage: "testimonials/testimonial_before.jpeg",
-  afterImage: "testimonials/testimonial_after.jpeg",
+  beforeImage: "images/testimonial_before.jpeg",
+  afterImage: "images/testimonial_after.jpeg",
   quote: "Nunca imaginé que podría volver a sentirme tan confiado. La prótesis capilar es increíblemente natural y el servicio de asesoramiento fue fundamental para elegir la opción perfecta para mí.",
   rating: 5,
   location: "Buenos Aires"
