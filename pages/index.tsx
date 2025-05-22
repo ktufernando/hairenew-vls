@@ -38,8 +38,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       <Head>
-        <title>HaireNew - Soluciones definitivas para la caída del cabello</title>
-        <meta name="description" content="Descubre las 3 mejores soluciones para la caída del cabello. Prótesis capilares de alta calidad con asesoramiento personalizado, colocación profesional y mantenimiento incluido." />
+        <title>Solución para verte 10 años mas joven sin cirugías</title>
+        <meta name="description" content="Descubre las 3 mejores soluciones para la caída del cabello. Prótesis capilares con asesoramiento personalizado, colocación profesional y mantenimiento incluido." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -55,16 +55,14 @@ export default function Home() {
         </div>
         
         {/* Nueva organización de secciones */}
-        <Transformations />
-        <Hero />
         <Benefits />
+        <Transformations />
         <ProblemSolution />
-        <Process />
         <Testimonials />
+        <Hero />
         <SpecialOffer />
         <Guarantee />
         <FAQ />
-        <CallToAction />
       </main>
       
       <Footer />

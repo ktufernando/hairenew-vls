@@ -5,39 +5,39 @@ import WhatsAppButton from './WhatsAppButton';
 const benefits = [
 	{
 		icon: <FiThumbsUp className="text-3xl text-primary-600" />,
-		title: 'Aspecto 100% Natural',
+		title: 'Más Confianza y Autoestima',
 		description:
-			'Fabricadas con cabello humano de alta calidad para un resultado totalmente indetectable.',
+			'Siente la diferencia de tener la apariencia que siempre soñaste. Con cabello, recuperarás tu autoestima y caminarás con más seguridad en cada paso.',
 	},
 	{
 		icon: <FiSmile className="text-3xl text-primary-600" />,
-		title: 'Recupera tu Confianza',
+		title: 'Verte Más Joven Al Instante',
 		description:
-			'Vuelve a sentirte seguro y atractivo en cualquier situación social o profesional.',
+			'Con una prótesis capilar, parecerás 10 años más joven desde el primer día. No necesitas esperar meses ni hacer grandes sacrificios.',
 	},
 	{
 		icon: <FiClock className="text-3xl text-primary-600" />,
-		title: 'Solución Inmediata',
+		title: 'Energía Renovada Para Nuevas Actividades',
 		description:
-			'Resultados instantáneos sin esperas ni tratamientos prolongados.',
+			'Sentirte seguro en tu imagen te dará energía para probar cosas nuevas. Desde ir al gimnasio hasta salir con mujeres o enfrentar nuevos retos.',
 	},
 	{
 		icon: <FiAward className="text-3xl text-primary-600" />,
-		title: 'Servicio Premium',
+		title: 'Respeto y Autoridad',
 		description:
-			'Asesoramiento personalizado, colocación profesional y mantenimiento incluido.',
+			'Tener una imagen cuidada y rejuvenecida genera respeto inmediato. En el trabajo y en la vida diaria, notarás cómo cambia la forma en que te perciben.',
 	},
 	{
 		icon: <FiShield className="text-3xl text-primary-600" />,
-		title: 'Sin Efectos Secundarios',
+		title: 'Sin Dolor Ni Efectos Secundarios',
 		description:
-			'Evita los riesgos de medicamentos o cirugías invasivas para la caída del cabello.',
+			'Sin riesgos de medicamentos que producen disfunción eréctil ni cirugías invasivas dolorosas.',
 	},
 	{
 		icon: <FiCheckCircle className="text-3xl text-primary-600" />,
-		title: 'Adaptable a tu Estilo',
+		title: 'Elegí tu propio estilo',
 		description:
-			'Personaliza el corte, color y densidad según tus preferencias y necesidades.',
+			'Personalizar el corte, color y densidad te dará un aspecto renovado y con actitud única.',
 	},
 ];
 
@@ -62,14 +62,6 @@ const Benefits = () => {
 		<section id="beneficios" className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4">
 				<div className="text-center mb-16">
-					<motion.span
-						className="text-primary-600 font-semibold uppercase tracking-wider"
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: true }}
-					>
-						Beneficios Exclusivos
-					</motion.span>
 					<motion.h2
 						className="text-3xl md:text-4xl font-display font-bold mt-2 mb-4 text-gray-900"
 						initial={{ opacity: 0, y: 20 }}
@@ -77,7 +69,7 @@ const Benefits = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
-						¿Por Qué Elegir Nuestras Soluciones Capilares?
+						Los beneficios de tener abundante cabello
 					</motion.h2>
 					<motion.p
 						className="text-lg text-gray-700 max-w-3xl mx-auto"
@@ -86,8 +78,7 @@ const Benefits = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5, delay: 0.2 }}
 					>
-						Ofrecemos mucho más que una simple prótesis capilar. Descubre todas
-						las ventajas de nuestro servicio integral
+						Nuestra agenda se completa cada vez más rápido. Las personas con calvicie se dan cuenta rápidamente del valor real en la vida que genera tener cabello.
 					</motion.p>
 				</div>
 
@@ -121,8 +112,8 @@ const Benefits = () => {
 					transition={{ duration: 0.5, delay: 0.6 }}
 				>
 					<WhatsAppButton
-						text="Descubre Nuestras Soluciones"
-						message="Hola, me gustaría conocer más sobre los beneficios de sus soluciones capilares"
+						text="¡Quiero asesoría gratis ahora!"
+						message="Hola, quiero una asesoría de sú protesís capilar"
 						size="lg"
 						className="mx-auto" // Añadido para centrar el botón
 					/>

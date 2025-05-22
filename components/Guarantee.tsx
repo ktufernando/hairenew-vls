@@ -61,11 +61,7 @@ const Guarantee = () => {
                   </li>
                   <li className="flex items-start">
                     <FiCheckCircle className="text-primary-600 mr-3 mt-1" />
-                    <span>Cambio por otro modelo si el actual no cumple tus expectativas</span>
-                  </li>
-                  <li className="flex items-start">
-                    <FiCheckCircle className="text-primary-600 mr-3 mt-1" />
-                    <span>Devolución completa de tu dinero si no estás satisfecho</span>
+                    <span>Devolución de la reserva si no estás satisfecho</span>
                   </li>
                 </ul>
               </div>

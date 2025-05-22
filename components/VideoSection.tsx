@@ -75,7 +75,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videoUrl, featured = false 
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Descubre por qué miles de personas eligen nuestras soluciones para recuperar su confianza y autoestima
+              Recupera tu juventud y confianza con abundante cabello ¡De un día para el otro!
             </motion.p>
             <motion.p
               className="text-lg text-accent-300 font-semibold"
@@ -84,7 +84,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videoUrl, featured = false 
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              ¡Mira el video ahora para conocer todas las opciones!
+              ¡Mira el video ahora! Sin dolor y sin cirugías. Transforma tu imagen y tu vida.
             </motion.p>
           </div>
         ) : (

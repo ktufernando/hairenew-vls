@@ -14,8 +14,8 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Recupera Tu Cabello Y Tu Confianza
-            <span className="block text-primary-600 mt-2">Con Nuestra Solución Integral</span>
+            ¿Estás Listo para Transformar tu Vida?
+            <span className="block text-primary-600 mt-2">No esperes más para verte y sentirte como cuando tenias abundante cabello.</span>
           </motion.h2>
           
           <motion.p 
@@ -25,7 +25,7 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Olvídate de medicamentos con efectos secundarios y cirugías dolorosas. Nuestra solución es inmediata, indolora y 100% natural.
+            ¡Es fácil, rápido y al alcance de tu mano!
           </motion.p>
           
           <motion.div 
@@ -46,7 +46,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center">
                 <FiCheckCircle className="text-primary-600 mr-2 text-xl" />
-                <span className="font-medium">Mantenimiento incluido</span>
+                <span className="font-medium">Resultados garantizados desde el primer día o te devolvemos la reserva</span>
               </div>
             </div>
           </motion.div>
@@ -59,7 +59,7 @@ const Hero = () => {
           >
             <WhatsAppButton 
               text="¡HABLAR CON UN ASESOR AHORA!" 
-              message="Hola, me interesa saber más sobre las soluciones para la caída del cabello"
+              message="Hola, me interesa saber más sobre la solución para la caída del cabello"
               size="lg"
             />
           </motion.div>

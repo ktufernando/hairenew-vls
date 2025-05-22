@@ -12,35 +12,30 @@ import 'swiper/css/pagination';
 
 const transformationVideos = [
   {
-    title: "Carlos, 42 años",
+    title: "Carlos, 38 años",
     description: "De inseguro a emprendedor exitoso en menos de un mes",
     videoId: "_rnfpL1PTCo",
   },
   {
-    title: "Miguel, 38 años",
+    title: "Miguel, 45 años",
     description: "Recuperó su vida social y encontró pareja tras años de aislamiento",
     videoId: "XEmvhUIaxHI",
   },
   {
-    title: "Alberto, 45 años",
+    title: "German, 32 años",
     description: "Ascendió en su trabajo tras recuperar su imagen profesional",
     videoId: "MZSYRoWyXNs",
   },
   {
-    title: "Juan, 36 años",
+    title: "Guillermo, 53 años",
     description: "Dejó atrás la depresión y volvió a disfrutar de la vida",
     videoId: "hIwZdXnpaZs",
   },
   {
-    title: "Marcos, 52 años",
-    description: "Se quitó 15 años de encima en una sola sesión",
+    title: "Marcos, 36 años",
+    description: "Se quitó 10 años de encima en una sola sesión",
     videoId: "QfuIo4iaQJ0",
-  },
-  {
-    title: "David, 47 años",
-    description: "Recuperó la confianza para dar presentaciones en público",
-    videoId: "CoCnRPgLnIc",
-  },
+  }
 ];
 
 const Transformations = () => {

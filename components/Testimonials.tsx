@@ -17,32 +17,32 @@ const featuredTestimonial = {
   afterImage: "testimonials/testimonial_after.jpeg",
   quote: "Nunca imaginé que podría volver a sentirme tan confiado. La prótesis capilar es increíblemente natural y el servicio de asesoramiento fue fundamental para elegir la opción perfecta para mí.",
   rating: 5,
-  location: "Madrid"
+  location: "Buenos Aires"
 };
 
 // Testimonios del carrusel (sin imágenes)
 const testimonials = [
   {
     name: "Fernando Gómez",
-    quote: "Después de probar decenas de productos sin resultados, encontré HaireNew. La diferencia es abismal. El mantenimiento incluido hace que todo sea muy sencillo y el resultado es espectacular.",
+    quote: "Soy otra persona. Me siento mucho mas joven y con confianza para entablar conversaciones con mujeres.",
     rating: 5,
-    location: "Barcelona"
+    location: "Berazategui"
   },
   {
     name: "Alejandro Ruiz",
-    quote: "La colocación profesional marca la diferencia. Nadie nota que llevo una prótesis capilar, y los cumplidos sobre mi apariencia no paran de llegar. ¡Ha cambiado mi vida social por completo!",
+    quote: "Voy a estar siempre agradecidos con ustedes. De sentirme triste y solo, pase a verme al espejo y sentirme autosuficiente. Empecé el gimnasio y baile. Recuperé mis ganas de vivir.",
     rating: 5,
-    location: "Valencia"
+    location: "Rosario"
   },
   {
-    name: "Miguel Ángel López",
-    quote: "Tenía miedo de que se notara artificial, pero el resultado es asombroso. El equipo de asesoramiento me ayudó a elegir el estilo perfecto para mi edad y rostro. ¡Altamente recomendable!",
+    name: "Juan Hernandez Lago",
+    quote: "Envié tu video a muchos conocidos y recibí una lluvia de Whatsapp agradeciemdome. Es importante que todos los que sufrimos de los mismo sepan que existe este método y es posible hacerlo en Argentina.",
     rating: 5,
-    location: "Sevilla"
+    location: "San Justo"
   },
   {
-    name: "Juan Carlos Pérez",
-    quote: "En menos de una semana recuperé la confianza que había perdido durante años. Mi familia quedó impresionada con el cambio. El proceso fue rápido y sin molestias.",
+    name: "Sergio Menichelli",
+    quote: "Estoy muy contento con el resultado. Mi familia esta feliz con mi cambio físico y me siento mucho mas seguro en mi ambiente laboral.",
     rating: 5,
     location: "Málaga"
   },
@@ -79,7 +79,7 @@ const Testimonials = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Miles de personas ya han recuperado su confianza y autoestima con nuestras soluciones capilares
+            Cientos de personas ya recuperaron su confianza y autoestima con nuestra solució capilar
           </motion.p>
         </div>
 

@@ -31,7 +31,7 @@ const SpecialOffer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Por tiempo limitado, obtén todo lo necesario para transformar tu imagen y recuperar tu confianza con un solo paquete
+            Por tiempo limitado, Obtene todo lo necesario para transformar tu imagen y recuperar tu confianza con un solo paquete
           </motion.p>
           
           {/* Indicador de tiempo limitado */}

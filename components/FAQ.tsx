@@ -5,6 +5,21 @@ import WhatsAppButton from './WhatsAppButton';
 
 const faqs = [
 	{
+		question: '¿Qué es una protesis capilar?',
+		answer:
+			'Es un sistema formado por una base de poliuretano y pelo natural que adherido al cuero cabelludo permite recuperar todo tu pelo con un aspecto totalmente indetectable, tambien podrás realizar cualquier tipo de actividades o deportes, meterte a la piscina o mar sin nigún inconveniente.',
+	},
+	{
+		question: '¿Cuánto dura una protesis capilar?',
+		answer:
+			'La prótesis capilar tiene una vida útil de 6 a 8 meses. Hay que tener en cuenta que la vas a utilizar en todo momento, mientras realizas deportes, te duchas, te peinas o incluso mientras dormis. Esto deteriora el cabello natural, haciendo que se reseque y también se desprendan de la misma, por lo cual después de este tiempo se recomienda renovar la prótesis. Aunque hay casos en los que llega a durar 10 0 12 meses.',
+	},
+	{
+		question: '¿Es doloroso el proceso de colocación?',
+		answer:
+			'No, y en una hora esta listo.',
+	},
+	{
 		question: '¿Las prótesis capilares se notan artificiales?',
 		answer:
 			'No, nuestras prótesis capilares están fabricadas con cabello humano de alta calidad y utilizamos técnicas avanzadas de colocación que garantizan un aspecto 100% natural. La mayoría de nuestros clientes aseguran que ni siquiera sus amigos cercanos pueden notar que llevan una prótesis.',
@@ -17,12 +32,7 @@ const faqs = [
 	{
 		question: '¿Cómo es el proceso de colocación?',
 		answer:
-			'La colocación es realizada por profesionales especializados utilizando técnicas no invasivas. Dependiendo del tipo de prótesis, podemos utilizar adhesivos médicos hipoalergénicos o sistemas de micro puntos que aseguran una fijación segura y duradera. El proceso tarda aproximadamente 1-2 horas y es completamente indoloro.',
-	},
-	{
-		question: '¿Cuánto tiempo dura una prótesis capilar?',
-		answer:
-			'Con el mantenimiento adecuado, nuestras prótesis capilares pueden durar entre 1 y 2 años. El programa de mantenimiento incluido en nuestro servicio ayuda a prolongar significativamente la vida útil de tu prótesis y mantenerla siempre en perfectas condiciones.',
+			'La colocación es realizada por profesionales especializados utilizando técnicas no invasivas. Utilizamos adhesivos médicos hipoalergénicos que aseguran una fijación segura y duradera. El proceso tarda aproximadamente 1 hora y es completamente indoloro.',
 	},
 	{
 		question: '¿Puedo hacer deporte o nadar con la prótesis puesta?',
@@ -30,9 +40,9 @@ const faqs = [
 			'¡Absolutamente! Nuestras prótesis están diseñadas para adaptarse a un estilo de vida activo. Puedes nadar, hacer ejercicio, ducharte y realizar todas tus actividades cotidianas con total normalidad. Durante el asesoramiento, te daremos recomendaciones específicas según tus actividades habituales.',
 	},
 	{
-		question: '¿Qué incluye el servicio de mantenimiento?',
+		question: '¿Qué es y porque  servicio de mantenimiento?',
 		answer:
-			'El servicio de mantenimiento incluye sesiones periódicas (generalmente cada 3-4 semanas) donde reajustamos la prótesis, realizamos limpieza profesional, tratamientos de hidratación del cabello y, si es necesario, pequeñas reparaciones. También incluye asesoramiento continuo sobre cuidados diarios en casa.',
+			'El servicio de mantenimiento se hace periodicamente según la crecida de tu pelo (generalmente cada 2-4 semanas) donde reajustamos la prótesis, realizamos limpieza profesional, tratamientos de hidratación del cabello. También incluye asesoramiento continuo sobre cuidados diarios en casa.',
 	},
 	{
 		question: '¿Funcionan las prótesis para todo tipo de alopecia?',
@@ -42,7 +52,7 @@ const faqs = [
 	{
 		question: '¿Ofrecen alguna garantía con sus servicios?',
 		answer:
-			'Sí, todos nuestros servicios incluyen una garantía de satisfacción. Si no estás completamente satisfecho con los resultados durante los primeros 30 días, trabajaremos contigo para ajustar la solución o te devolveremos tu dinero. También ofrecemos garantía de 1 año por defectos de fabricación en nuestras prótesis.',
+			'Sí, todos nuestros servicios incluyen una garantía de satisfacción. Si no estás completamente satisfecho con los resultados durante los primeros 30 días, trabajaremos contigo para ajustar la solución o te devolveremos tu dinero de reserva.',
 	},
 ];
 
@@ -138,7 +148,7 @@ const FAQ = () => {
 				>
 					<WhatsAppButton
 						text="¿Tienes más preguntas? ¡Contáctanos!"
-						message="Hola, tengo algunas preguntas sobre sus soluciones capilares"
+						message="Hola, tengo algunas preguntas sobre su solución capilar"
 						size="lg"
 						className="mx-auto"
 					/>
