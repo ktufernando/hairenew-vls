@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Animaciones adicionales */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Asegurarse que los contenedores de video tengan el aspecto correcto */
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.aspect-w-16 > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Estilo para formato vertical de YouTube Shorts */
+.aspect-w-9 {
+  position: relative;
+  padding-bottom: 177.77%; /* Proporción 9:16 para formato vertical */
+  max-height: 90vh; /* Limitar altura máxima para evitar que se corte */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.aspect-w-9 > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
