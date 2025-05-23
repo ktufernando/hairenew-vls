@@ -30,10 +30,12 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
     );
     
     // Rastrear el evento en Facebook Pixel
-    trackFbEvent('Contact', { 
-      content_category: 'WhatsApp',
-      content_name: `${location} - ${text}`
-    });
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Contact', { 
+        content_category: 'WhatsApp',
+        content_name: `${location} - ${text}`
+      });
+    }
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

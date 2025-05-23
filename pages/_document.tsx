@@ -25,7 +25,7 @@ export default function Document() {
           }}
         />
         
-        {/* Meta Pixel Code */}
+        {/* Meta Pixel Code - Versión actualizada */}
         <script 
           dangerouslySetInnerHTML={{
             __html: `
@@ -41,6 +41,7 @@ export default function Document() {
               fbq('track', 'PageView');
             `
           }}
+          strategy="afterInteractive"
         />
         <noscript>
           <img 

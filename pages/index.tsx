@@ -14,6 +14,7 @@ import CallToAction from '../components/CallToAction'
 import Footer from '../components/Footer'
 import CountdownTimer from '../components/CountdownTimer'
 import Transformations from '../components/Transformations'
+import PixelTest from '../components/PixelTest'
 
 export default function Home() {
   // Agregamos un efecto para trackear el scroll y activar elementos conforme se desplazan a la vista
@@ -65,6 +66,9 @@ export default function Home() {
       </main>
       
       <Footer />
+      
+      {/* Solo visible en desarrollo */}
+      <PixelTest />
     </div>
   )
 }
