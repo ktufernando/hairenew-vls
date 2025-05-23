@@ -41,7 +41,6 @@ export default function Document() {
               fbq('track', 'PageView');
             `
           }}
-          strategy="afterInteractive"
         />
         <noscript>
           <img 
