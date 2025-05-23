@@ -1,5 +1,6 @@
 import { FaWhatsapp } from 'react-icons/fa';
 import { trackEvent } from './GoogleAnalytics';
+import { trackFbEvent } from './FacebookPixel';
 
 interface WhatsAppButtonProps {
   text: string;
@@ -27,6 +28,12 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
       'CTA', 
       `WhatsApp CTA - ${location} - ${text}`
     );
+    
+    // Rastrear el evento en Facebook Pixel
+    trackFbEvent('Contact', { 
+      content_category: 'WhatsApp',
+      content_name: `${location} - ${text}`
+    });
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
