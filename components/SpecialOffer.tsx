@@ -120,13 +120,13 @@ const SpecialOffer = () => {
                 <div className="mb-4 md:mb-0">
                   <span className="text-accent-300 font-bold text-lg">Precio especial por tiempo limitado</span>
                   <div className="flex items-center mt-1">
-                    <span className="text-gray-400 line-through text-xl mr-3">€900</span>
-                    <span className="text-white text-3xl font-bold">€480</span>
+                    <span className="text-gray-400 line-through text-xl mr-3">900 USD</span>
+                    <span className="text-white text-3xl font-bold">480 USD</span>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-white text-primary-800 py-2 px-4 rounded-lg font-bold mr-3">
-                    AHORRA €420
+                    AHORRA 420 USD
                   </div>
                   <div className="text-white font-bold">
                     47% DESCUENTO
